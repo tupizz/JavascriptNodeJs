@@ -1,0 +1,127 @@
+.frase {
+   font-size: 1em;
+   text-align: justify;
+}
+body {
+   overflow-y: scroll;
+}
+.campo-digitacao {
+   font-size: 1.2em;
+   min-width: 100%;
+   max-width: 100%;
+   height: 150px;
+   max-height: 300px;
+   transition: 1s ease-out background-color;
+   margin: 0px;
+   padding: 0px;
+}
+.campo-digitacao-certo {
+   /*Deslocamento horizontal, Deslocamento Vertical, Raio de Blur da sombra, Expansionamneto da sombra*/
+   box-shadow: inset 0px 0px 1px 1px greenyellow;
+   transition: 0.4s;
+}
+.campo-digitacao-errado {
+   /*Deslocamento horizontal, Deslocamento Vertical, Raio de Blur da sombra, Expansionamneto da sombra*/
+   box-shadow: inset 0px 0px 1px 1px red;
+   transition: 0.4s;
+}
+.finalizado {
+   background-color: lightgray;
+}
+.icone {
+   /*vertical-align: middle;*/
+   margin-right: 10px;
+   margin-bottom: 2px;
+}
+#tamanho-frase {
+   font-weight: bold;
+}
+#tempo-jogo {
+   font-weight: bold;
+}
+.icones {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: space-around;
+}
+.icones-pai {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.linha-abaixo-textarea {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.info-contadores {
+   text-align: right;
+   font-size: 1.2em;
+}
+.btn-remover-placar {
+   color: red;
+}
+.botoes-campo-digitacao {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.botoes-campo-digitacao button {
+   margin-right: 5px;
+}
+.select-usuario select {
+   display: block;
+   margin-left: 50px;
+}
+.selectize-input {
+   width: 150px !important;
+}
+.btn-remover-placar > i {
+   transition: 0.7s;
+}
+.btn-remover-placar > i:hover {
+   transform: scale(1.3, 1.3);
+}
+.principal {
+   padding-bottom: 80px;
+}
+.principal-com-placar {
+   display: flex;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.placar {
+   width: 30%;
+   display: none;
+}
+.section-game {
+   padding-left: 20px;
+   padding-right: 50px;
+   width: 70%;
+}
+footer {
+   background-color: #3c88c5;
+   font-size: 0.8em;
+   color: #fff;
+   position: fixed;
+   z-index: 99;
+   bottom: 0px;
+   width: 100%;
+}
+.aviso-erro {
+   border-radius: 50px;
+}
+@media(max-width: 950px) {
+   .principal-com-placar {
+      flex-direction: column;
+      align-items: center;
+   }
+   .section-game {
+      padding-right: 0px;
+      width: 100%;
+   }
+   .placar {
+      width: 100%;
+   }
+}

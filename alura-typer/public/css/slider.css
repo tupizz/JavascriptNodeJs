@@ -1,0 +1,13 @@
+.slider {
+   height: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+   background-color: black;
+   border-radius: 5px;
+   padding: 1px 4px 4px 3px;
+   font-size: 16px;
+}
+.slick-dots li button:before {
+   font-size: 30px;
+}
